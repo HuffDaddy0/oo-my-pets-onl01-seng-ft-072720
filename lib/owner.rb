@@ -52,8 +52,8 @@ end
 
 def sell_pets
   pets = []
-  pets << owner.cats
-  pets << owner.dogs
+  pets << self.cats
+  pets << self.dogs
   pets.map do |pet|
      pet.owner = nil
      pet.mood = "nervous"

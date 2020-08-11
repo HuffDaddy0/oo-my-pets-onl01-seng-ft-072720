@@ -47,7 +47,7 @@ def walk_dogs
 end
 
 def feed_cats
-  cats.map {|cat| cat.mood = "happy"}
+  self.cats.map {|cat| cat.mood = "happy"}
 end
 
 def sell_pets

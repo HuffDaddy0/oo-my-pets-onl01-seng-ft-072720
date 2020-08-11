@@ -56,6 +56,7 @@ end
 def sell_pets
   pets = self.cats.map {|cat| self.dogs << cat}
   binding.pry
+  pets.flatten
   pets.each do |pet|
      #binding.pry
      pet.owner = nil

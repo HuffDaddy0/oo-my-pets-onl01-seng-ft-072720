@@ -27,12 +27,11 @@ def say_species
 end
 
 def buy_cat(name)
-  cat = Cat.new(name)
-  cat.owner = self
+  cat = Cat.new(name, self)
 end
 
 def buy_dog(name)
-  dog = dog.new(name)
+  dog = dog.new(name, self)
 end
 
 def cats
@@ -41,3 +40,9 @@ end
 
 def dogs
   cats.all.find_all {|dog| dog.owner == self}
+end
+
+
+
+
+

@@ -23,7 +23,7 @@ def self.reset_all
 end
 
 def say_species
-  puts "I am a #{self.species}"
+  "I am a #{self.species}"
 end
 
 def buy_cat(name)

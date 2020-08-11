@@ -30,10 +30,12 @@ end
 
 def buy_cat(name)
   cat = Cat.new(name, self)
+  self.pets << cat
 end
 
 def buy_dog(name)
   dog = Dog.new(name, self)
+  self.pets << dog
 end
 
 def cats

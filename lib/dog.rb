@@ -6,4 +6,5 @@ class Dog
   def initialize(name, mood)
     self.name = name
     self.mood = mood
+    @@all << self
 end

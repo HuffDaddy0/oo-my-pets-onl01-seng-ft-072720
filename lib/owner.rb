@@ -54,6 +54,7 @@ def sell_pets
   pets = []
   pets << self.cats
   pets << self.dogs
+  pets.flatten
   pets.map do |pet|
      pet.owner = nil
      pet.mood = "nervous"

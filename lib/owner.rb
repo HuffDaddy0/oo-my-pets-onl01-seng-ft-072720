@@ -56,7 +56,7 @@ def feed_cats
 end
 
 def sell_pets
-  @pets.map do |pet|
+  @pets.each do |pet|
     # binding.pry
      pet.owner = nil
     #  binding.pry

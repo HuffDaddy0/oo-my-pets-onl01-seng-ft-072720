@@ -59,3 +59,5 @@ def sell_pets
   pets.map do |pet|
      pet.owner = nil
      pet.mood = "nervous"
+   end
+ end

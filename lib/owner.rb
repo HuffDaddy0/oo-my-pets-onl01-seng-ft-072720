@@ -1,3 +1,5 @@
+require 'pry'
+
 class Owner
   # code goes here
   attr_accessor  :pets
@@ -57,6 +59,7 @@ def sell_pets
   pets.flatten
   pets.map do |pet|
      pet.owner = nil
+     binding.pry
      pet.mood = "nervous"
    end
  end

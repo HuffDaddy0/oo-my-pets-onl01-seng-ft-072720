@@ -31,12 +31,12 @@ end
 
 def buy_cat(name)
   cat = Cat.new(name, self)
-  @pets << cat
+  self.pets << cat
 end
 
 def buy_dog(name)
   dog = Dog.new(name, self)
-  @pets << dog
+  self.pets << dog
 end
 
 def cats

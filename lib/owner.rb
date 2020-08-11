@@ -3,10 +3,23 @@ class Owner
   attr_accessor  :pets
   attr_reader :name, :species
 
-
+@@all = []
   def initialize(name)
     self.name = name
     self.species = human
+    @@all << self
+end
+
+def self.all
+  self.all
+end
+
+def self.count
+  self.all.length
+end
+
+def self.reset_all
+  @@all.clear
 end
 
 def say_species

@@ -54,7 +54,7 @@ def feed_cats
 end
 
 def sell_pets
-  pets = self.cats.each {|cat| self.dogs << cat}
+  pets = self.cats.map {|cat| self.dogs << cat}
   binding.pry
   pets.each do |pet|
      #binding.pry

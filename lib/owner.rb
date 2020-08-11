@@ -55,11 +55,7 @@ def feed_cats
 end
 
 def sell_pets
-  pets = []
-  pets << self.cats
-  pets << self.dogs
-  pets.flatten
-  pets.map do |pet|
+  self.pets.map do |pet|
     binding.pry
      pet.owner = none
     #  binding.pry

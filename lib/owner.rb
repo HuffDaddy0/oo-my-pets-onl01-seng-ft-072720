@@ -30,12 +30,12 @@ end
 
 def buy_cat(name)
   cat = Cat.new(name, self)
-  self.pets << cat
+  @pets << cat
 end
 
 def buy_dog(name)
   dog = Dog.new(name, self)
-  self.pets << dog
+  @pets << dog
 end
 
 def cats
@@ -55,7 +55,7 @@ def feed_cats
 end
 
 def sell_pets
-  self.pets.map do |pet|
+  @pets.map do |pet|
     # binding.pry
      pet.owner = none
     #  binding.pry

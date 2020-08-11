@@ -59,7 +59,7 @@ def sell_pets
   pets.flatten
   pets.map do |pet|
     binding.pry
-     pet.owner = nil
+     pet.owner = none
     #  binding.pry
      pet.mood = "nervous"
    end

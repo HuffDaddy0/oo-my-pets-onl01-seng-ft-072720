@@ -57,8 +57,8 @@ def sell_pets
   pets = self.cats.map {|cat| self.dogs << cat}
   # binding.pry
   pets.flatten
-  pets.map do |pet|
-     #binding.pry
+  pets.each do |pet|
+     binding.pry
      pet.owner = nil
      #binding.pry
      pet.mood = "nervous"

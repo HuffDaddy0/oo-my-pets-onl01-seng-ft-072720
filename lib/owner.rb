@@ -50,3 +50,12 @@ end
 def feed_cats
   cats = Cat.all.find_all {|cat| cat.owner == self}
   cats.map {|cat| cat.mood = "happy"}
+end
+
+def sell_pets
+  pets = []
+  pets << owner.cats
+  pets << owner.dogs
+  pets.map do |pet|
+     pet.owner = nil
+     pet.mood = "nervous"

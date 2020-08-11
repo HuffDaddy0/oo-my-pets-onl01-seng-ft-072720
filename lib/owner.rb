@@ -58,7 +58,7 @@ end
 def sell_pets
   @pets.map do |pet|
     # binding.pry
-     pet.owner = none
+     pet.owner = nil
     #  binding.pry
      pet.mood = "nervous"
    end

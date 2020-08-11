@@ -31,12 +31,10 @@ end
 
 def buy_cat(name)
   cat = Cat.new(name, self)
-  self.pets << cat
 end
 
 def buy_dog(name)
   dog = Dog.new(name, self)
-  self.pets << dog
 end
 
 def cats
@@ -56,12 +54,12 @@ def feed_cats
 end
 
 def sell_pets
-   pets = self.cats << self.dogs
-  binding.pry
+  pets = self.cats << self.dogs
+  #binding.pry
   pets.each do |pet|
-     binding.pry
+     #binding.pry
      pet.owner = nil
-     binding.pry
+     #binding.pry
      pet.mood = "nervous"
    end
  end

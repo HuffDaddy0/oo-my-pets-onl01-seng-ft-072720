@@ -35,11 +35,11 @@ def buy_dog(name)
 end
 
 def cats
-  cats.all.find_all {|cat| cat.owner == self}
+  Cat.all.find_all {|cat| cat.owner == self}
 end
 
 def dogs
-  cats.all.find_all {|dog| dog.owner == self}
+  Cat.all.find_all {|dog| dog.owner == self}
 end
 
 def walk_dogs

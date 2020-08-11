@@ -34,3 +34,6 @@ end
 def buy_dog(name)
   dog = dog.new(name)
 end
+
+def cats
+  cats.all.find_all {|cat| cat.owner == self}

@@ -7,5 +7,10 @@ attr_reader :name
   def initialize(name, owner)
     self.name = name
     self.owner = owner
+    self.mood = "nervous"
     @@all << self
+end
+
+def self.all
+  @@all
 end

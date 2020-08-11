@@ -41,3 +41,12 @@ end
 def dogs
   cats.all.find_all {|dog| dog.owner == self}
 end
+
+def walk_dogs
+  dogs = Dog.all.find_all {|dog| dog.owner == self}
+  dogs.map {|dog| dog.mood = "happy"}
+end
+
+def feed_cats
+  cats = Cat.all.find_all {|cat| cat.owner == self}
+  cats.map {|cat| cat.mood = "happy"}

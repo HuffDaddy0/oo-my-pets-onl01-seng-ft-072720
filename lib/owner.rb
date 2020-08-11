@@ -41,8 +41,3 @@ end
 def dogs
   cats.all.find_all {|dog| dog.owner == self}
 end
-
-
-
-
-
